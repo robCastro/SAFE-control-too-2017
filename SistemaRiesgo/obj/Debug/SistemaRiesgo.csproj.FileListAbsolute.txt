@@ -1,0 +1,153 @@
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\obj\Debug\SistemaRiesgo.csprojResolveAssemblyReference.cache
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\SistemaRiesgo.dll.config
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\SistemaRiesgo.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\SistemaRiesgo.pdb
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Antlr3.Runtime.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\AspNet.ScriptManager.bootstrap.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\AspNet.ScriptManager.jQuery.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\EntityFramework.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\EntityFramework.SqlServer.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.AspNet.FriendlyUrls.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.Google.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.ScriptManager.MSAjax.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.ScriptManager.WebForms.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Web.Infrastructure.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Newtonsoft.Json.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Owin.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\System.Web.Optimization.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\System.Web.Providers.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\WebGrease.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\System.Web.Optimization.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Antlr3.Runtime.pdb
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Newtonsoft.Json.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.AspNet.FriendlyUrls.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\EntityFramework.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\EntityFramework.SqlServer.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.Google.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\obj\Debug\SistemaRiesgo.dll
+c:\users\roberto\documents\visual studio 2013\Projects\SistemaRiesgo\SistemaRiesgo\obj\Debug\SistemaRiesgo.pdb
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\SistemaRiesgo.dll.config
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\SistemaRiesgo.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\SistemaRiesgo.pdb
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Antlr3.Runtime.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\EntityFramework.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\EntityFramework.SqlServer.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Newtonsoft.Json.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Owin.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\System.Web.Optimization.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\System.Web.Providers.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\WebGrease.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\EntityFramework.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\EntityFramework.SqlServer.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\System.Web.Optimization.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Antlr3.Runtime.pdb
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Newtonsoft.Json.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\obj\Debug\SistemaRiesgo.csprojResolveAssemblyReference.cache
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\obj\Debug\SistemaRiesgo.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo - copia\SistemaRiesgo\obj\Debug\SistemaRiesgo.pdb
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\SistemaRiesgo.dll.config
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\SistemaRiesgo.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\SistemaRiesgo.pdb
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Antlr3.Runtime.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\EntityFramework.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\EntityFramework.SqlServer.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Newtonsoft.Json.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Owin.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\System.Web.Optimization.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\System.Web.Providers.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\WebGrease.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\EntityFramework.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\EntityFramework.SqlServer.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Newtonsoft.Json.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\System.Web.Optimization.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Antlr3.Runtime.pdb
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\obj\Debug\SistemaRiesgo.csprojResolveAssemblyReference.cache
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\obj\Debug\SistemaRiesgo.dll
+C:\Users\Roberto\Documents\Visual Studio 2013\Projects\SistemaRiesgo SAFE Control\SistemaRiesgo\obj\Debug\SistemaRiesgo.pdb
