@@ -15,7 +15,7 @@ namespace SistemaRiesgo.Logica
                 int codigo;
                 try
                 {
-                    codigo = db.empresas.Max(empresaAux => empresaAux.codigo) + 1;
+                    codigo = (db.empresas != null && db.empresas.Any()) ? db.empresas.Max(empresaAux => empresaAux.codigo) + 1 : 0;
                 }
                 catch (ArgumentNullException)
                 {
@@ -27,7 +27,8 @@ namespace SistemaRiesgo.Logica
                 empresa.objetivos = objetivos;
                 empresa.alcance = alcance;
                 empresa.idAdmin = idUsuario;
-                
+                    //idUsuario es el correo del admin loggeado. Este correo es extraido
+                    //en la pantalla CrearEmpresa.aspx
                 db.empresas.Add(empresa);
                 db.SaveChanges();
             }
@@ -39,24 +40,11 @@ namespace SistemaRiesgo.Logica
             
             using (var db = new ContextoEmpresa())
             {
-                
-                //var empresa = db.empresas.Where(empresaAux => empresaAux.codigo == codigo).FirstOrDefault();
-                
-                 
-            
                 empresa.nombre = nombre;
                 empresa.objetivos = objetivos;
                 empresa.alcance = alcance;
-
                 db.Entry(empresa).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
-                
-                /*empresa = db.empresas.Find(empresa.codigo);
-                empresa.objetivos = objetivos;
-                empresa.alcance = alcance;
-                empresa.nombre = nombre;
-                db.Entry(empresa).CurrentValues.SetValues(empresa);
-                db.SaveChanges();*/
             }
             return true;
         }

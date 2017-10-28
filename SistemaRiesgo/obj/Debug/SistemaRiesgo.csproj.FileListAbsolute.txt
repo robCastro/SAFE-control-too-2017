@@ -202,3 +202,7 @@ C:\Users\Roberto\Documents\UES\TOO\Proyecto\Sprint 2\Aplicacion\SistemaRiesgo\bi
 C:\Users\Roberto\Documents\UES\TOO\Proyecto\Sprint 2\Aplicacion\SistemaRiesgo\obj\Debug\SistemaRiesgo.csprojResolveAssemblyReference.cache
 C:\Users\Roberto\Documents\UES\TOO\Proyecto\Sprint 2\Aplicacion\SistemaRiesgo\obj\Debug\SistemaRiesgo.dll
 C:\Users\Roberto\Documents\UES\TOO\Proyecto\Sprint 2\Aplicacion\SistemaRiesgo\obj\Debug\SistemaRiesgo.pdb
+C:\Users\Roberto\Documents\UES\TOO\Proyecto\Sprint 2\Aplicacion\SistemaRiesgo\obj\Debug\SistemaRiesgo.Migrations.InitialCreate.resources
+C:\Users\Roberto\Documents\UES\TOO\Proyecto\Sprint 2\Aplicacion\SistemaRiesgo\obj\Debug\SistemaRiesgo.csproj.GenerateResource.Cache
+C:\Users\Roberto\Documents\UES\TOO\Proyecto\Sprint 2\Aplicacion\SistemaRiesgo\obj\Debug\SistemaRiesgo.Migrations.agregadaClaseEmpleadoyllavesforaneasenEmpres.resources
+C:\Users\Roberto\Documents\UES\TOO\Proyecto\Sprint 2\Aplicacion\SistemaRiesgo\obj\Debug\SistemaRiesgo.Migrations.TextAreaparaObjetivosyAlcanceagregadosenmodels.resources

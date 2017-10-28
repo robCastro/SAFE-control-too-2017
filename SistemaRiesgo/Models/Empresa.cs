@@ -11,14 +11,16 @@ namespace SistemaRiesgo.Models
         [Required, StringLength(100), Display(Name = "Nombre de Empresa")]
         public string nombre{get; set;}
 
-        [StringLength(200), Display(Name = "Objetivos")]
+        [StringLength(200), Display(Name = "Objetivos"), DataType(DataType.MultilineText)]
         public string objetivos{get; set;}
 
-        [StringLength(200), Display(Name = "Alcance")]
+        [StringLength(200), Display(Name = "Alcance"), DataType(DataType.MultilineText)]
         public string alcance{get; set;}
 
         public string idAdmin { get; set; }
-        
+
+
+        public virtual ICollection<Empleado> empleadosGlobales { get; set; } //listado de empleados Globales de esta empresa
 
         public virtual ICollection<Departamento> departamentos{get; set;}
     }

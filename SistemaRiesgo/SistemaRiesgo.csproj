@@ -170,6 +170,10 @@
     <Content Include="Admin\CrearDepartamento.aspx" />
     <Content Include="Admin\CrearEmpresa.aspx" />
     <Content Include="Admin\EditarEmpresa.aspx" />
+    <Content Include="App_Data\aspnet-SistemaRiesgo-20171008092152.mdf" />
+    <Content Include="App_Data\aspnet-SistemaRiesgo-20171008092152_log.ldf">
+      <DependentUpon>aspnet-SistemaRiesgo-20171008092152.mdf</DependentUpon>
+    </Content>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-original.css" />
     <Content Include="Content\bootstrap-original.min.css" />
@@ -220,7 +224,9 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -326,9 +332,23 @@
     <Compile Include="Logica\AccionesRol.cs" />
     <Compile Include="Logica\NuevaEmpresa.cs" />
     <Compile Include="Logica\NuevoDepartamento.cs" />
+    <Compile Include="Migrations\201710100141015_InitialCreate.cs" />
+    <Compile Include="Migrations\201710100141015_InitialCreate.Designer.cs">
+      <DependentUpon>201710100141015_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710282252068_agregada Clase Empleado y llaves foraneas en Empres.cs" />
+    <Compile Include="Migrations\201710282252068_agregada Clase Empleado y llaves foraneas en Empres.Designer.cs">
+      <DependentUpon>201710282252068_agregada Clase Empleado y llaves foraneas en Empres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710282257316_TextArea para Objetivos y Alcance agregados en models.cs" />
+    <Compile Include="Migrations\201710282257316_TextArea para Objetivos y Alcance agregados en models.Designer.cs">
+      <DependentUpon>201710282257316_TextArea para Objetivos y Alcance agregados en models.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Administrador.cs" />
     <Compile Include="Models\ContextoEmpresa.cs" />
     <Compile Include="Models\Departamento.cs" />
+    <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\Empresa.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Inicializador.cs" />
@@ -358,7 +378,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <EmbeddedResource Include="Migrations\201710100141015_InitialCreate.resx">
+      <DependentUpon>201710100141015_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710282252068_agregada Clase Empleado y llaves foraneas en Empres.resx">
+      <DependentUpon>201710282252068_agregada Clase Empleado y llaves foraneas en Empres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710282257316_TextArea para Objetivos y Alcance agregados en models.resx">
+      <DependentUpon>201710282257316_TextArea para Objetivos y Alcance agregados en models.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

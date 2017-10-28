@@ -16,10 +16,13 @@ namespace SistemaRiesgo.Admin
         {
             using (var db = new ContextoEmpresa())
             {
+                    //extrayendo empresa actual en base al usuario loggeado
                 empresa = db.empresas.Where(empresaAux => empresaAux.idAdmin == Context.User.Identity.Name).FirstOrDefault();
             }
+                //si no hay empresa para este usuario redirigir a CrearEmpresa
             if (empresa == null)
                 Response.Redirect("~/Admin/CrearEmpresa");
+
             string accion = Request.QueryString["accion"];
             if (accion == "agregar")
             {
@@ -31,9 +34,10 @@ namespace SistemaRiesgo.Admin
         protected void btnGuardarYNuevoDepartamento_Click(object sender, EventArgs e)
         {
             guardar();
-            // Reload the page.
             string pageUrl = Request.Url.AbsoluteUri.Substring(0, Request.Url.AbsoluteUri.Count() - Request.Url.Query.Count());
+                //extrayendo redireccion actual
             Response.Redirect(pageUrl + "?accion=agregar"); //page load de arriba recibe este argumento
+                //redirigiendo a pagina actual con parametro
                
         }
 

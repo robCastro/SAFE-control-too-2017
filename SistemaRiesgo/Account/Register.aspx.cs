@@ -14,14 +14,17 @@ namespace SistemaRiesgo.Account
     {
         protected void CreateUser_Click(object sender, EventArgs e)
         {
+            //creando el usuario
             var manager = new UserManager();
             var user = new ApplicationUser() { UserName = UserName.Text, Email = UserName.Text };
             IdentityResult result = manager.Create(user, Password.Text);
+            //si se creo exitosamente
             if (result.Succeeded)
             {
                 
-                //Inicio agregado
+                //Inicio agregado usuario a rol Administrador
                 Models.ApplicationDbContext context = new ApplicationDbContext();
+                    //este context es la conexion por Default al SGBD de VS.
                 var roleStore = new RoleStore<IdentityRole>(context);
                 var roleMgr = new RoleManager<IdentityRole>(roleStore);
                 result = manager.AddToRole(manager.FindByEmail(UserName.Text).Id, "admin");

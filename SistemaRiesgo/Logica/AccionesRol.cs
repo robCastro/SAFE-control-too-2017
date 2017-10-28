@@ -10,9 +10,9 @@ namespace SistemaRiesgo.Logica
 {
     internal class AccionesRol
     {
-        internal void AddUserAndRole() //solo como ejemplo, crea rol y crea usuario
+        internal void AddUserAndRole() //Para crear rol y usuario
         {
-            // Access the application context and create result variables.
+                // Usando conexion a SGBD de VS.
             Models.ApplicationDbContext context = new ApplicationDbContext();
             IdentityResult IdRoleResult;
             IdentityResult IdUserResult;

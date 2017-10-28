@@ -15,7 +15,7 @@ namespace SistemaRiesgo.Logica
                 int codigo;
                 try
                 {
-                    codigo = db.departamentos.Max(departamentoAux => departamentoAux.codigo) + 1;
+                    codigo = (db.departamentos != null && db.departamentos.Any()) ? db.departamentos.Max(departamentoAux => departamentoAux.codigo) + 1 : 0;
                 }
                 catch (ArgumentNullException)
                 {
