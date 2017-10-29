@@ -71,6 +71,7 @@ namespace SistemaRiesgo
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Startup.crearRoles();
             if (HttpContext.Current.User.IsInRole("admin"))
             {
 
