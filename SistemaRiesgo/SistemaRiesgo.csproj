@@ -170,6 +170,7 @@
     <Content Include="Admin\CrearDepartamento.aspx" />
     <Content Include="Admin\CrearEmpresa.aspx" />
     <Content Include="Admin\EditarEmpresa.aspx" />
+    <Content Include="Admin\GestionarPermisosG.aspx" />
     <Content Include="App_Data\aspnet-SistemaRiesgo-20171008092152.mdf" />
     <Content Include="App_Data\aspnet-SistemaRiesgo-20171008092152_log.ldf">
       <DependentUpon>aspnet-SistemaRiesgo-20171008092152.mdf</DependentUpon>
@@ -180,6 +181,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="GestionarEmpleado\GestionarPermisosD.aspx" />
     <Content Include="Imagenes\logo.jpg" />
     <Content Include="Admin\ListaDepartamentos.aspx" />
     <Content Include="packages.config" />
@@ -189,6 +191,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="Admin\Web.config" />
+    <Content Include="GestionarEmpleado\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -295,6 +298,13 @@
     <Compile Include="Admin\EditarEmpresa.aspx.designer.cs">
       <DependentUpon>EditarEmpresa.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\GestionarPermisosG.aspx.cs">
+      <DependentUpon>GestionarPermisosG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GestionarPermisosG.aspx.designer.cs">
+      <DependentUpon>GestionarPermisosG.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -318,6 +328,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarEmpleado\GestionarPermisosD.aspx.cs">
+      <DependentUpon>GestionarPermisosD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionarEmpleado\GestionarPermisosD.aspx.designer.cs">
+      <DependentUpon>GestionarPermisosD.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -388,6 +405,7 @@
       <DependentUpon>201710282257316_TextArea para Objetivos y Alcance agregados en models.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
