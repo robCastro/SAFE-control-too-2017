@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.AspNet.Identity.Owin;
+﻿using Microsoft.AspNet.Identity;                    //necesarios para el uso de usuarios
+using Microsoft.AspNet.Identity.EntityFramework;    //necesarios para el uso de usuarios
+using Microsoft.AspNet.Identity.Owin;               //necesarios para el uso de usuarios
 using System;
 using System.Linq;
 using System.Web;
