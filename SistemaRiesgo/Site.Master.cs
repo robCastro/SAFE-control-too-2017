@@ -82,6 +82,7 @@ namespace SistemaRiesgo
                 miEmpresa.Visible = true;
                 misDepartamentos.Visible = true;
                 roles.Visible = true;
+                A1.Visible = true;
             }
         }
 

@@ -11,6 +11,9 @@ namespace SistemaRiesgo.Models
         [Required, StringLength(50), Display(Name = "Nombre")]
         public string nombre { get; set; }
 
+        [Required, StringLength(50), Display(Name = "Nombre")]
+        public string apellido { get; set; }
+
         public int? codDepartamento { get; set; }
 
         public int? codEmpresa { get; set; }

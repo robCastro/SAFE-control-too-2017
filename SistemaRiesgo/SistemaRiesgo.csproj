@@ -168,6 +168,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Admin\CrearDepartamento.aspx" />
+    <Content Include="Admin\CrearEmpleado.aspx" />
     <Content Include="Admin\CrearEmpresa.aspx" />
     <Content Include="Admin\EditarEmpresa.aspx" />
     <Content Include="Admin\GestionarPermisosG.aspx" />
@@ -286,6 +287,13 @@
     <Compile Include="Admin\CrearDepartamento.aspx.designer.cs">
       <DependentUpon>CrearDepartamento.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\CrearEmpleado.aspx.cs">
+      <DependentUpon>CrearEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CrearEmpleado.aspx.designer.cs">
+      <DependentUpon>CrearEmpleado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\CrearEmpresa.aspx.cs">
       <DependentUpon>CrearEmpresa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -351,6 +359,7 @@
     <Compile Include="Logica\AccionesRol.cs" />
     <Compile Include="Logica\NuevaEmpresa.cs" />
     <Compile Include="Logica\NuevoDepartamento.cs" />
+    <Compile Include="Logica\NuevoEmpleado.cs" />
     <Compile Include="Migrations\201710100141015_InitialCreate.cs" />
     <Compile Include="Migrations\201710100141015_InitialCreate.Designer.cs">
       <DependentUpon>201710100141015_InitialCreate.cs</DependentUpon>

@@ -10,7 +10,6 @@ namespace SistemaRiesgo.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "SistemaRiesgo.Models.ContextoEmpresa";
         }
 
         protected override void Seed(SistemaRiesgo.Models.ContextoEmpresa context)
