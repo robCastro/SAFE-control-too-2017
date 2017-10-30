@@ -22,6 +22,24 @@ namespace SistemaRiesgo.Admin {
         protected global::System.Web.UI.WebControls.Label lblUsuarioInvalido;
         
         /// <summary>
+        /// msjAuxiliar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label msjAuxiliar;
+        
+        /// <summary>
+        /// msjAuxiliar2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label msjAuxiliar2;
+        
+        /// <summary>
         /// divNombreEmpleado control.
         /// </summary>
         /// <remarks>
