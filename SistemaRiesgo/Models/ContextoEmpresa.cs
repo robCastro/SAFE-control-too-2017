@@ -4,7 +4,7 @@ namespace SistemaRiesgo.Models
 {
     public class ContextoEmpresa : DbContext
     {
-        public ContextoEmpresa() : base("robertoC")
+        public ContextoEmpresa() : base("edwin")
         {
         }
 
