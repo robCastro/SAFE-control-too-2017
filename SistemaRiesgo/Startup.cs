@@ -18,9 +18,10 @@ namespace SistemaRiesgo
             {
                     //nuevo gestor de Roles
                 var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(dbVisualStudio));
-                
-                        //Roles Globales de la Empresa
-                    if (!roleManager.RoleExists("ClaAct")) //si no existe el rol crearlo
+
+                //Roles Globales de la Empresa
+                #region Roles Globales
+                if (!roleManager.RoleExists("ClaAct")) //si no existe el rol crearlo
                     {
                         var rol = new IdentityRole();
                         rol.Name = "ClaAct";
@@ -56,8 +57,46 @@ namespace SistemaRiesgo
                         rol.Name = "AsigPlan";
                         roleManager.Create(rol);
                     }
-            
-                        //Roles de Departamento
+                #endregion
+                    //Roles de Departamento
+                    #region Roles Departamento
+                    if (!roleManager.RoleExists("EjeTar")) //si no existe el rol crearlo
+                    {
+                        var rol = new IdentityRole();
+                        rol.Name = "EjeTar";
+                        roleManager.Create(rol);
+                    }
+                    if (!roleManager.RoleExists("RegAct")) //si no existe el rol crearlo
+                    {
+                        var rol = new IdentityRole();
+                        rol.Name = "RegAct";
+                        roleManager.Create(rol);
+                    }
+                    if (!roleManager.RoleExists("ConTar")) //si no existe el rol crearlo
+                    {
+                        var rol = new IdentityRole();
+                        rol.Name = "ConTar";
+                        roleManager.Create(rol);
+                    }
+                    if (!roleManager.RoleExists("AdminEmp")) //si no existe el rol crearlo
+                    {
+                        var rol = new IdentityRole();
+                        rol.Name = "AdminEmp";
+                        roleManager.Create(rol);
+                    }
+                    if (!roleManager.RoleExists("DecRie")) //si no existe el rol crearlo
+                    {
+                        var rol = new IdentityRole();
+                        rol.Name = "DecRie";
+                        roleManager.Create(rol);
+                    }
+                    if (!roleManager.RoleExists("AsigTar")) //si no existe el rol crearlo
+                    {
+                        var rol = new IdentityRole();
+                        rol.Name = "AsigTar";
+                        roleManager.Create(rol);
+                    }
+                    #endregion
             } 
         }
     }

@@ -19,9 +19,10 @@ namespace SistemaRiesgo.Admin
         private Empleado empleado = new Empleado();
         private bool idEmpleadoValido = false;
         ApplicationUser usuario = new ApplicationUser();
+        private List<string> rolesDeUsuario = new List<string>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack) //si no es un refresh
+            //if (!IsPostBack) //si no es un refresh
             {
                 using (ContextoEmpresa db = new ContextoEmpresa())
                 {
@@ -65,7 +66,9 @@ namespace SistemaRiesgo.Admin
                             //ApplicationUser user = manager.FindByEmail(empleado.idUsuario);
                             using (ApplicationDbContext dbVisualStudio = new ApplicationDbContext())
                             {
-                                usuario = dbVisualStudio.Users.Where(aux => aux.Email == empleado.idUsuario).FirstOrDefault();
+                                //usuario = dbVisualStudio.Users.Where(aux => aux.Email == empleado.idUsuario).FirstOrDefault();
+                                var manager = new UserManager();
+                                usuario = manager.FindByEmail(empleado.idUsuario);
                                 if (usuario != null)
                                 {
                                     lblNombreEmpleado.Text = empleado.nombre;
@@ -94,36 +97,47 @@ namespace SistemaRiesgo.Admin
                                             {
                                                 if (rol.Name.Equals("ClaAct"))
                                                 {
+                                                    rolesDeUsuario.Add("ClaAct");
+                                                    if (!IsPostBack)
                                                     clasificarActivos.Checked = true;
                                                     continue;
                                                 } //saltar a siguiente rol
                                                 if (rol.Name.Equals("AsigVul"))
                                                 {
+                                                    rolesDeUsuario.Add("AsigVul");
+                                                    if (!IsPostBack)
                                                     asignarVuln.Checked = true;
                                                     continue;
                                                 } //saltar a siguiente rol
                                                 if (rol.Name.Equals("GesVul"))
                                                 {
+                                                    rolesDeUsuario.Add("GesVul");
+                                                    if (!IsPostBack)
                                                     gestionarVuln.Checked = true;
                                                     continue;
                                                 } //saltar a siguiente rol
                                                 if (rol.Name.Equals("GesAmen"))
                                                 {
+                                                    rolesDeUsuario.Add("GesAmen");
+                                                    if (!IsPostBack)
                                                     gestionarAmen.Checked = true;
                                                     continue;
                                                 } //saltar a siguiente rol
                                                 if (rol.Name.Equals("GesPlan"))
                                                 {
+                                                    rolesDeUsuario.Add("GesPlan");
+                                                    if (!IsPostBack)
                                                     gestionarPlan.Checked = true;
                                                     continue;
                                                 } //saltar a siguiente rol
                                                 if (rol.Name.Equals("AsigPlan"))
                                                 {
+                                                    rolesDeUsuario.Add("AsigPlan");
+                                                    if (!IsPostBack)
                                                     asignarPlan.Checked = true;
                                                     continue;
                                                 } //saltar a siguiente rol
                                             }
-
                                         }
                                     }
                                     else //si no hay roles para el usuario
@@ -146,6 +160,8 @@ namespace SistemaRiesgo.Admin
             
         }
 
+
+        // No implementado
         public async Task DeleteRolesAsync(List<string> deleteList, string userId)
         {
             if (userId != null)
@@ -157,6 +173,8 @@ namespace SistemaRiesgo.Admin
                 }
             }
         }
+
+        // No implementado
         public void btnGuardarClic(object sender, EventArgs e)
         {
             List<string> rolesEliminar = new List<string>();
@@ -182,7 +200,7 @@ namespace SistemaRiesgo.Admin
                 }
             }
             catch (InvalidOperationException)
-            { msjAuxiliar2.Text = "Eliminado de Clasificar Activos"; }
+            {  }
             finally
             {
                 try
@@ -241,7 +259,8 @@ namespace SistemaRiesgo.Admin
                                 { }
                                 finally
                                 {
-                                    DeleteRolesAsync(rolesEliminar, usuario.Id);
+                                    //RegisterAsyncTask(new PageAsyncTask(DeleteRolesAsync(rolesEliminar, usuario.Id)));
+                                    //DeleteRolesAsync(rolesEliminar, usuario.Id);
                                 }
                             }
                             
@@ -254,27 +273,138 @@ namespace SistemaRiesgo.Admin
             
         }
 
-        protected void clasificarActivos_CheckedChanged(object sender, EventArgs e)
+        public void cambiosRol()
         {
-            /*if (clasificarActivos.Checked)
+            ApplicationDbContext context = new ApplicationDbContext();
+            var manager = new UserManager();
+            //var roleStore = new RoleStore<IdentityRole>(context);
+            //var roleMgr = new RoleManager<IdentityRole>(roleStore);
+            IdentityResult resultado = new IdentityResult();
+            if (clasificarActivos.Checked)
             {
-                msjAuxiliar2.Text = "Checked";
+                if (!rolesDeUsuario.Contains("ClaAct"))
+                {
+                    resultado = manager.AddToRole(manager.FindByEmail(empleado.idUsuario).Id, "ClaAct");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
             }
             else
-                msjAuxiliar2.Text = "Not Checked";*/
-        }
-
-        protected void asignarPlan_CheckedChanged(object sender, EventArgs e)
-        {
-            /*if (asignarPlan.Checked)
             {
-                msjAuxiliar2.Text = "Checked";
+                if (rolesDeUsuario.Contains("ClaAct"))
+                {
+                    resultado = manager.RemoveFromRole(usuario.Id, "ClaAct");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
+            }
+
+
+            if (asignarVuln.Checked)
+            {
+                if (!rolesDeUsuario.Contains("AsigVul"))
+                {
+                    resultado = manager.AddToRole(manager.FindByEmail(empleado.idUsuario).Id, "AsigVul");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
             }
             else
-                msjAuxiliar2.Text = "Not Checked";*/
+            {
+                if (rolesDeUsuario.Contains("AsigVul"))
+                {
+                    resultado = manager.RemoveFromRole(usuario.Id, "AsigVul");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
+            }
+
+
+            if (gestionarVuln.Checked)
+            {
+                if (!rolesDeUsuario.Contains("GesVul"))
+                {
+                    resultado = manager.AddToRole(manager.FindByEmail(empleado.idUsuario).Id, "GesVul");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
+            }
+            else
+            {
+                if (rolesDeUsuario.Contains("GesVul"))
+                {
+                    resultado = manager.RemoveFromRole(usuario.Id, "GesVul");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
+            }
+
+
+            if (gestionarAmen.Checked)
+            {
+                if (!rolesDeUsuario.Contains("GesAmen"))
+                {
+                    resultado = manager.AddToRole(manager.FindByEmail(empleado.idUsuario).Id, "GesAmen");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
+            }
+            else
+            {
+                if (rolesDeUsuario.Contains("GesAmen"))
+                {
+                    resultado = manager.RemoveFromRole(usuario.Id, "GesAmen");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
+            }
+
+
+            if (gestionarPlan.Checked)
+            {
+                if (!rolesDeUsuario.Contains("GesPlan"))
+                {
+                    resultado = manager.AddToRole(manager.FindByEmail(empleado.idUsuario).Id, "GesPlan");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
+            }
+            else
+            {
+                if (rolesDeUsuario.Contains("GesPlan"))
+                {
+                    resultado = manager.RemoveFromRole(usuario.Id, "GesPlan");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
+            }
+
+
+            if (asignarPlan.Checked)
+            {
+                if (!rolesDeUsuario.Contains("AsigPlan"))
+                {
+                    resultado = manager.AddToRole(manager.FindByEmail(empleado.idUsuario).Id, "AsigPlan");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
+            }
+            else
+            {
+                if (rolesDeUsuario.Contains("AsigPlan"))
+                {
+                    resultado = manager.RemoveFromRole(usuario.Id, "AsigPlan");
+                    if (!resultado.Succeeded)
+                        msjAuxiliar2.Text = resultado.Errors.FirstOrDefault();
+                }
+            }
         }
 
 
-
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+            cambiosRol();
+            msjExito.Text = "Cambios en Roles Guardados";
+        }
     }
 }

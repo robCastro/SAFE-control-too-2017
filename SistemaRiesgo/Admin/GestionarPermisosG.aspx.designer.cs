@@ -22,13 +22,13 @@ namespace SistemaRiesgo.Admin {
         protected global::System.Web.UI.WebControls.Label lblUsuarioInvalido;
         
         /// <summary>
-        /// msjAuxiliar control.
+        /// msjExito control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label msjAuxiliar;
+        protected global::System.Web.UI.WebControls.Label msjExito;
         
         /// <summary>
         /// msjAuxiliar2 control.
@@ -128,5 +128,23 @@ namespace SistemaRiesgo.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTable tablaBotones;
+        
+        /// <summary>
+        /// linkListaDepartamentos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkListaDepartamentos;
+        
+        /// <summary>
+        /// linkListaDep control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor linkListaDep;
     }
 }
