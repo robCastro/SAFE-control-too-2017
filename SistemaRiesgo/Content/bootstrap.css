@@ -32,6 +32,10 @@ main,
 menu,
 nav,
 section,
+
+
+
+
 summary {
   display: block;
 }
@@ -109,6 +113,9 @@ hr {
 pre {
   overflow: auto;
 }
+
+
+
 code,
 kbd,
 pre,
@@ -191,10 +198,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.hiddentext
+  { display: none; }
+
 td,
 th {
   padding: 0;
 }
+
+ .hiddencol 
+  { display: none; }
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
@@ -245,6 +260,9 @@ th {
   h3 {
     page-break-after: avoid;
   }
+
+
+
   .navbar {
     display: none;
   }
@@ -266,6 +284,10 @@ th {
   .table-bordered td {
     border: 1px solid #ddd !important;
   }
+
+  
+
+
 }
 @font-face {
   font-family: 'Glyphicons Halflings';

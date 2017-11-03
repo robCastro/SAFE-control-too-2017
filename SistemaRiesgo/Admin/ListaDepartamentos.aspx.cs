@@ -15,6 +15,7 @@ namespace SistemaRiesgo
     public partial class ListaDepartamentos : System.Web.UI.Page
     {
         private Empresa empresa = new Empresa();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             using (var db = new ContextoEmpresa())
@@ -133,5 +134,125 @@ namespace SistemaRiesgo
                 }
             }
         }
+
+
+         protected void listaDepartamentos_SelectedIndexChanged(Object sender, EventArgs e)
+         {
+             // Get the currently selected row using the SelectedRow property.
+             GridViewRow row = listaDepartamentos.SelectedRow;
+
+
+             ListItem item = new ListItem();
+             item.Text = Server.HtmlDecode(row.Cells[1].Text);
+
+
+              string id = item.Text;
+
+             codigo.Text =id;
+
+            
+                
+         }
+
+        
+
+        protected void btnEnviar_Click(Object sender, EventArgs e)
+         {
+
+             Response.Redirect("ListaEmpleados.aspx?id=" + codigo.Text);
+         }
+
+
+
+
+
+        //Funciones del gridview de empleados Globales
+
+        public IQueryable<Empleado> getEmpleadosG( )
+        {
+            if (empresa == null)
+            {
+                return null;
+            }
+            else
+            {
+                var _db = new ContextoEmpresa();
+                IQueryable<Empleado> query = _db.empleados;
+                query = query.Where(empleado => empleado.codEmpresa == empresa.codigo  && empleado.codDepartamento== null);
+                return query;
+            }
+        }
+
+
+
+        public void listaEmpleadosG_DeleteItem(int codigo)
+        {
+            using (ContextoEmpresa db = new ContextoEmpresa())
+            {
+                var item = new Empleado { codigo = codigo };
+                db.Entry(item).State = EntityState.Deleted;
+                try
+                {
+                    db.SaveChanges();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    ModelState.AddModelError("",
+                    String.Format("Empleado con codigo {0} no existe", codigo));
+
+                }
+            }
+        }
+
+
+        public void listaEmpleadosG_UpdateItem(int codigo)
+        {
+            using (ContextoEmpresa db = new ContextoEmpresa())
+            {
+                Empleado item = null;
+                item = db.empleados.Find(codigo);
+                if (item == null)
+                {
+                    ModelState.AddModelError("",
+              String.Format("Empleado con codigo {0} no fue Encontrado", codigo));
+                    return;
+                }
+                TryUpdateModel(item);
+                if (ModelState.IsValid)
+                {
+                    db.SaveChanges();
+                }
+            }
+        }
+
+
+        protected void listaEmpleadosG_SelectedIndexChanged(Object sender, EventArgs e)
+        {
+            // Get the currently selected row using the SelectedRow property.
+            GridViewRow row = listaEmpleadosG.SelectedRow;
+
+
+            ListItem item = new ListItem();
+            item.Text = Server.HtmlDecode(row.Cells[1].Text);
+
+
+            string id = item.Text;
+
+            idEG.Text = id;
+
+
+
+        }
+
+
+        protected void btnEnviarId_Click(Object sender, EventArgs e)
+        {
+
+            Response.Redirect("GestionarPermisosG.aspx?idEmpleado=" + idEG.Text);
+        }
+
+
+
+
     }
 }
