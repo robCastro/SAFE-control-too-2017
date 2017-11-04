@@ -43,7 +43,16 @@ namespace SistemaRiesgo.GestionarEmpleado
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            idEmpleado = GridView1.SelectedRow.Cells[1].Text;
+            GridViewRow row = GridView1.SelectedRow;
+
+            ListItem itemEmpl = new ListItem();
+            itemEmpl.Text = Server.HtmlDecode(row.Cells[0].Text);
+
+            idEmpleado = itemEmpl.Text;
+
+            codSec.Text = idEmpleado;
+
+            //idEmpleado = GridView1.SelectedRow.Cells[1].Text;
             GPermit.Visible = true;
         }
 
@@ -51,6 +60,16 @@ namespace SistemaRiesgo.GestionarEmpleado
         {
             Response.Redirect("~/GestionarEmpleado/GestionarPermisosD.aspx?idEmpleado=" + empleado.codigo);
             Response.Redirect("~/GestionarEmpleado/GestionarPermisosD.aspx?idDepartamento=" + idDepartamento);
+        }
+
+        protected void ReturnD_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/ListaDepartamentos.aspx");
+        }
+
+        protected void NvoEmpleado(object sender, EventArgs e)
+        {
+            //Response.Redirect("~/Admin/CrearEmpleado.aspx?IdDepto=" + idDepartamento);
         }
     }
 }

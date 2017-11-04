@@ -45,6 +45,7 @@
         </div>
     </section>
     <br />
+    <asp:Label ID="codSec" runat="server" Text="Label" Visible="false"></asp:Label>
         <br />
         <div>
             <asp:Button ID="ReturnDepto" runat="server" Visible="true" Text="Retornar a Departamentos" OnClick="ReturnD_Click" />
