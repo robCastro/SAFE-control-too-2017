@@ -27,10 +27,11 @@ namespace SistemaRiesgo.GestionarEmpleado
             using (var db = new ContextoEmpresa())
             {
                 depto = db.departamentos.Where(deptoAux => deptoAux.codigo == idDepartamento).FirstOrDefault();
-                empleado = db.empleados.Where(empleAux => empleAux.idUsuario == Context.User.Identity.Name).FirstOrDefault();
+                //empleado = db.empleados.Where(empleAux => empleAux.idUsuario == Context.User.Identity.Name).FirstOrDefault();
             }
             if (depto == null)
             {
+                MsjError.Visible = true;
                 btnNuevo.Visible = false;
             }
             else
@@ -54,6 +55,63 @@ namespace SistemaRiesgo.GestionarEmpleado
 
             //idEmpleado = GridView1.SelectedRow.Cells[1].Text;
             GPermit.Visible = true;
+        }
+
+        public IQueryable<Empleado> getEmpleadosG()
+        {
+            if (depto == null)
+            {
+                return null;
+            }
+            else
+            {
+                var _db = new ContextoEmpresa();
+                IQueryable<Empleado> query = _db.empleados;
+                query = query.Where(empleado => empleado.codDepartamento != null && empleado.codDepartamento == idDepartamento);
+                return query;
+            }
+        }
+
+
+
+        public void listaEmpleadosG_DeleteItem(int codigo)
+        {
+            using (ContextoEmpresa db = new ContextoEmpresa())
+            {
+                var item = new Empleado { codigo = codigo };
+                db.Entry(item).State = EntityState.Deleted;
+                try
+                {
+                    db.SaveChanges();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    ModelState.AddModelError("",
+                    String.Format("Empleado con codigo {0} no existe", codigo));
+
+                }
+            }
+        }
+
+
+        public void listaEmpleadosG_UpdateItem(int codigo)
+        {
+            using (ContextoEmpresa db = new ContextoEmpresa())
+            {
+                Empleado item = null;
+                item = db.empleados.Find(codigo);
+                if (item == null)
+                {
+                    ModelState.AddModelError("",
+              String.Format("Empleado con codigo {0} no fue Encontrado", codigo));
+                    return;
+                }
+                TryUpdateModel(item);
+                if (ModelState.IsValid)
+                {
+                    db.SaveChanges();
+                }
+            }
         }
 
         protected void GPermit_Click(object sender, EventArgs e)

@@ -22,6 +22,15 @@ namespace SistemaRiesgo.GestionarEmpleado {
         protected global::System.Web.UI.WebControls.Label accion;
         
         /// <summary>
+        /// MsjError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label MsjError;
+        
+        /// <summary>
         /// TextBox1 control.
         /// </summary>
         /// <remarks>

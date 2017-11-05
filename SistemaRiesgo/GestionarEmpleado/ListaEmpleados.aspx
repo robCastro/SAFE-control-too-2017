@@ -7,10 +7,15 @@
             <asp:ValidationSummary ShowModelStateErrors="true" runat="server" CssClass="text-danger" />
         </div>
         <div>
+            <asp:Label ID="MsjError" runat="server" Text="No existe Departamento" Visible="false"></asp:Label>
             <asp:TextBox ID="TextBox1" runat="server" Visible="false"></asp:TextBox>
         </div>
         <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="codigo" DataSourceID="SqlDataSource1" Width="600px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="codigo" DataSourceID="SqlDataSource1" Width="600px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged"
+                SelectMethod="getEmpleadosG"
+                DeleteMethod="GridView1_DeleteItem"
+                UpdateMethod="GridView1_UpdateItem"
+                >
                 <Columns>
                     <asp:BoundField DataField="codigo" HeaderText="codigo" InsertVisible="False" ReadOnly="True" SortExpression="codigo" />
                     <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
@@ -37,7 +42,7 @@
                 </Columns>
             </asp:GridView>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:edwin %>" 
-                SelectCommand="SELECT [codigo], [nombre], [idUsuario] FROM [Empleadoes] WHERE ([departamento_codigo] = @departamento_codigo)">
+                >
                 <SelectParameters>
                     <asp:ControlParameter ControlID="TextBox1" Name="departamento_codigo" PropertyName="Text" Type="Int32" />
                 </SelectParameters>

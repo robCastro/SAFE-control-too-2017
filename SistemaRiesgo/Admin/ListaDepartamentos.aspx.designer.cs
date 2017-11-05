@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SistemaRiesgo {
+namespace SistemaRiesgo.Admin {
     
     
     public partial class ListaDepartamentos {
