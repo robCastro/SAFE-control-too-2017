@@ -63,7 +63,7 @@
 
             <asp:Label ID="codigo"
                 ForeColor="Red"
-                runat="server" CssClass="hiddentext" />
+                runat="server" CssClass="hiddentext"  />
 
         <asp:Button Text="Ver Empleados" CssClass="btn btn-primary btn-sm" runat="server" ID="btnEnviar" OnClick="btnEnviar_Click" />
             <br />
