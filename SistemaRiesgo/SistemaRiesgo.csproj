@@ -169,6 +169,7 @@
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Admin\CrearDepartamento.aspx" />
     <Content Include="Admin\CrearEmpleado.aspx" />
+    <Content Include="Admin\CrearEmpleadoG.aspx" />
     <Content Include="Admin\CrearEmpresa.aspx" />
     <Content Include="Admin\EditarEmpresa.aspx" />
     <Content Include="Admin\GestionarPermisosG.aspx" />
@@ -293,6 +294,13 @@
     </Compile>
     <Compile Include="Admin\CrearEmpleado.aspx.designer.cs">
       <DependentUpon>CrearEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CrearEmpleadoG.aspx.cs">
+      <DependentUpon>CrearEmpleadoG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CrearEmpleadoG.aspx.designer.cs">
+      <DependentUpon>CrearEmpleadoG.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\CrearEmpresa.aspx.cs">
       <DependentUpon>CrearEmpresa.aspx</DependentUpon>

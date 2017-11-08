@@ -66,6 +66,8 @@
                                 
                                 <li><a runat="server" visible ="false" id="roles" href="#">Asignar Roles</a></li>
                                 <li><a runat="server" visible ="false" id="A1" href="~/Admin/CrearEmpleado">Empleados</a></li>
+                                  <li><a runat="server" visible ="false" id="A2" href="~/Admin/CrearEmpleadoG">Empleados Globales</a></li>
+
                             </ul>
                         </li>
                     </ul>

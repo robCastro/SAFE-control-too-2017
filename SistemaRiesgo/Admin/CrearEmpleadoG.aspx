@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Crear Empleado" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CrearEmpleado.aspx.cs" Inherits="SistemaRiesgo.Admin.CrearEmpleado" %>
+﻿<%@ Page Title="Empleado Global" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CrearEmpleadoG.aspx.cs" Inherits="SistemaRiesgo.Admin.CrearEmpleadoG" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
     <table>
@@ -66,5 +66,3 @@
      
 </asp:Content>
   
-
-

@@ -10,7 +10,7 @@
 namespace SistemaRiesgo.Admin {
     
     
-    public partial class CrearEmpleado {
+    public partial class CrearEmpleadoG {
         
         /// <summary>
         /// Label1 control.

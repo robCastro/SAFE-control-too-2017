@@ -83,6 +83,7 @@ namespace SistemaRiesgo
                 misDepartamentos.Visible = true;
                 roles.Visible = true;
                 A1.Visible = true;
+                A2.Visible = true;
             }
         }
 

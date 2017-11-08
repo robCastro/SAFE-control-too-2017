@@ -10,23 +10,22 @@ using System.Web.UI.WebControls;
 using SistemaRiesgo.Models;
 
 using SistemaRiesgo.Logica;
+
 namespace SistemaRiesgo.Admin
 {
-    public partial class CrearEmpleado : System.Web.UI.Page
+    public partial class CrearEmpleadoG : System.Web.UI.Page
     {
-        private Empresa empresa= new Empresa();
+        private Empresa empresa = new Empresa();
         int IdDepto;
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            // aca recupero el IdDepto que edwin me envia como parametro para asignarselo al empleado
-            string StringIdDepto = Request.QueryString["id"];
-            int IdDepto = Int32.Parse(StringIdDepto);
-             
+            // en este caso no necesitamos IdDepto porque este empleado es global
+
             using (var db = new ContextoEmpresa())
             {
                 //aca se extrae la empresa relacionada con el usuario que esta logueado
-                empresa= db.empresas.Where(empresaAux => empresaAux.idAdmin == Context.User.Identity.Name).FirstOrDefault(); 
+                empresa = db.empresas.Where(empresaAux => empresaAux.idAdmin == Context.User.Identity.Name).FirstOrDefault();
             }
 
             if (empresa == null)
@@ -59,7 +58,7 @@ namespace SistemaRiesgo.Admin
         {
             //Aca la accion que se hara en Cancelar
         }
-        
+
         //aqui la funcion para guardar al empleado 
         private void guardar()
         {
@@ -68,18 +67,19 @@ namespace SistemaRiesgo.Admin
 
             //le pasamos como parametro el nombre del empleado , el codigo de la empresa, el usuario
             // null por el momento en departamento luego sincronizar con edwin
-            
+
             //solicitar este parametro a edwin
             //
-          
+            int depto;
+            depto = 0; //no acepta colocarle null solo al comparar con datos de la base de datos
+
             //UserName.Text le mando el email
-            bool guardadoCorrectamente = auxiliar.agregarEmpleado(NombreEmpleado.Text, UserName.Text, empresa.codigo,IdDepto);
+            bool guardadoCorrectamente = auxiliar.agregarEmpleado(NombreEmpleado.Text, UserName.Text, empresa.codigo, depto);
             var manager = new UserManager();
             var user = new ApplicationUser() { UserName = UserName.Text, Email = UserName.Text };
             IdentityResult result = manager.Create(user, Password.Text);
             //si se creo exitosamente
-            
+
         }
-        
     }
 }
